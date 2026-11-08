@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Full-Stack Student Assignment Workspace for organizing subjects, tracking deadlines, and monitoring academic progress.",
   "scripts": {
-    "start": "npm run start:backend",
+    "start": "node backend/server.js",
+    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
     "start:backend": "npm --prefix backend start",
     "start:frontend": "npm --prefix frontend run dev",
     "dev:backend": "npm --prefix backend run dev",
@@ -23,4 +24,3 @@
   "author": "Student Assignment Workspace",
   "license": "MIT"
 }
-
